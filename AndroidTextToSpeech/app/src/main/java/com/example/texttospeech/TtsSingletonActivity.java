@@ -3,7 +3,6 @@ package com.example.texttospeech;
 import android.os.Bundle;
 import android.speech.tts.TextToSpeech;
 import android.support.v7.app.AppCompatActivity;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -53,10 +52,10 @@ public class TtsSingletonActivity extends AppCompatActivity implements View.OnCl
         Toast.makeText(getApplicationContext(), speakIt, Toast.LENGTH_SHORT).show();
 
         boolean isTextToSpeechIsReady = SpeechManager.getInstance().isTextToSpeechIsReady();
-        Log.d(TAG, "isTextToSpeechIsReady: " + isTextToSpeechIsReady);
+//        Log.d(TAG, "isTextToSpeechIsReady: " + isTextToSpeechIsReady);
 
         if (isTextToSpeechIsReady) {
-            Log.d(TAG, "Speak it: " + speakIt);
+//            Log.d(TAG, "Speak it: " + speakIt);
             SpeechManager.getInstance().speakOutText(speakIt);
         }
     }

@@ -51,7 +51,7 @@ public class SpeechManager implements TextToSpeech.OnInitListener {
                 Log.e(TAG, "TTS - This Language is not supported");
                 mTextToSpeechIsReady = false;
             } else {
-                Log.d(TAG, " TextToSpeech Is Ready");
+//                Log.d(TAG, "TextToSpeech Is Ready");
                 mTextToSpeechIsReady = true;
             }
         } else {

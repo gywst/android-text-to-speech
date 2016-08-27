@@ -52,8 +52,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
             int result = mTextToSpeech.setLanguage(Locale.US);
 
-            if (result == TextToSpeech.LANG_MISSING_DATA
-                    || result == TextToSpeech.LANG_NOT_SUPPORTED) {
+            if (result == TextToSpeech.LANG_MISSING_DATA || result == TextToSpeech.LANG_NOT_SUPPORTED) {
                 Log.e(TAG, "This Language is not supported");
             } else {
                 mButtonTextToSpeech.setEnabled(true);
